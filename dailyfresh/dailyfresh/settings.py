@@ -76,8 +76,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'dailyfresh',
         'USER': 'root',
-        'PASSWORD': 'Mathkk123+-',
-        'HOST': '192.168.229.130',
+        'PASSWORD': 'howcute121',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
@@ -147,7 +147,7 @@ EMAIL_PROM = '天天生鲜<Ylisen10@163.com>'  # 收件人看到的发件人
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://192.168.229.130:6379/1",
+        "LOCATION": "redis://127.0.0.1:6379/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -168,7 +168,7 @@ DEFAULT_FILE_STORAGE = 'utils.fdfs.storage.FDFSStorage'
 FDFS_CLIENT_CONF = './utils/fdfs/client.conf'
 
 # 设置fdfs存储服务器上nginx的IP和端口号
-FDFS_URL = 'http://192.168.229.130:80/'
+FDFS_URL = 'http://127.0.0.1:80/'
 
 
 # 全文检索框架配置
